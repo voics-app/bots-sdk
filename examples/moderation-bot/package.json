@@ -1,0 +1,15 @@
+{
+  "name": "@discordy-voics/moderation-bot-example",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Example Discordy moderation bot: /ping, /kick with confirmation buttons, /purge.",
+  "license": "UNLICENSED",
+  "type": "module",
+  "scripts": {
+    "start": "tsx --env-file-if-exists=.env src/main.ts",
+    "register": "tsx --env-file-if-exists=.env src/register-commands.ts"
+  },
+  "dependencies": {
+    "@discordy-voics/bots": "workspace:*"
+  }
+}
