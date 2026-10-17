@@ -87,6 +87,15 @@ examples/       moderation-bot example
 docs/           getting-started guide and generated API reference
 ```
 
+## Pending owner actions
+
+These steps need the GitHub organisation and cannot be done from this repository alone:
+
+- Create the private `discordy-voics/bots-sdk` repository and push `main` and `develop`.
+- Confirm the reusable workflows exist in `discordy-voics/.github` (`node.yml`, `gitflow-guard.yml`, `release-please.yml`).
+- Add the `DEPS_TOKEN` secret (passed to `node.yml`) and allow the release workflow `packages: write` so `pnpm publish` can reach GitHub Packages.
+- Run CI once on GitHub; the workflows have not run there yet.
+
 ## Contributing
 
 Use Conventional Commits and git-flow: branch from `develop`, open a pull request back to `develop`, and let release-please cut releases from `main`.
