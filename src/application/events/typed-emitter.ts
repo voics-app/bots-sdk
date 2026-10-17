@@ -2,10 +2,11 @@
 export type EventMap = { [event: string]: unknown[] };
 
 type Listener<A extends unknown[]> = (...args: A) => void;
+type AnyListener = (...args: unknown[]) => void;
 
 /** A minimal, dependency-free, fully typed event emitter. */
 export class TypedEmitter<E extends EventMap> {
-  private readonly listeners = new Map<keyof E, Set<Listener<never[]>>>();
+  private readonly listeners = new Map<keyof E, Set<AnyListener>>();
 
   on<K extends keyof E>(event: K, listener: Listener<E[K]>): this {
     let set = this.listeners.get(event);
@@ -13,7 +14,7 @@ export class TypedEmitter<E extends EventMap> {
       set = new Set();
       this.listeners.set(event, set);
     }
-    set.add(listener as Listener<never[]>);
+    set.add(listener as unknown as AnyListener);
     return this;
   }
 
@@ -26,7 +27,7 @@ export class TypedEmitter<E extends EventMap> {
   }
 
   off<K extends keyof E>(event: K, listener: Listener<E[K]>): this {
-    this.listeners.get(event)?.delete(listener as Listener<never[]>);
+    this.listeners.get(event)?.delete(listener as unknown as AnyListener);
     return this;
   }
 
@@ -34,7 +35,7 @@ export class TypedEmitter<E extends EventMap> {
   emit<K extends keyof E>(event: K, ...args: E[K]): boolean {
     const set = this.listeners.get(event);
     if (!set || set.size === 0) return false;
-    for (const listener of [...set]) (listener as Listener<E[K]>)(...args);
+    for (const listener of [...set]) (listener as unknown as Listener<E[K]>)(...args);
     return true;
   }
 
