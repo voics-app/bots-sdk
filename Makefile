@@ -24,6 +24,10 @@ build: install
 docs: install
 	$(PNPM) run docs:api
 
-## bots-sdk ships as an npm package, not a container image
+IMAGE ?= ghcr.io/discordy-voics/bots-sdk
+VERSION ?= $(shell node -p "require('./package.json').version")
+REVISION ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
+
+## Multi-stage build: verify and pack the package, then a non-root runtime image
 docker:
-	@echo "bots-sdk is published to GitHub Packages as @discordy-voics/bots; there is no container image to build."
+	docker build --build-arg VERSION=$(VERSION) --build-arg REVISION=$(REVISION) -t $(IMAGE):$(VERSION) .
