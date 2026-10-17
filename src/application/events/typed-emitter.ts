@@ -1,7 +1,7 @@
 /** Maps event names to listener argument tuples. */
 export type EventMap = { [event: string]: unknown[] };
 
-type Listener<A extends unknown[]> = (...args: A) => void;
+export type Listener<A extends unknown[]> = (...args: A) => void;
 type AnyListener = (...args: unknown[]) => void;
 
 /** A minimal, dependency-free, fully typed event emitter. */

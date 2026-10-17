@@ -9,7 +9,7 @@ import {
   type BaseInteraction,
 } from "./interactions.js";
 
-type Handler<I> = (interaction: I) => unknown;
+export type Handler<I> = (interaction: I) => unknown;
 
 export type AnyInteraction = CommandInteraction | ComponentInteraction | ModalSubmitInteraction | AutocompleteInteraction;
 

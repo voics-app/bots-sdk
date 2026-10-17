@@ -26,8 +26,8 @@ import {
   assertDescription,
 } from "./command-options.js";
 
-type Configure<B> = (builder: B) => B;
-interface ChildBuilder {
+export type Configure<B> = (builder: B) => B;
+export interface ChildBuilder {
   readonly optionName: string | undefined;
   toJSON(): ApiApplicationCommandOption;
 }

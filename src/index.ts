@@ -90,3 +90,13 @@ export { WebhookClient, parseWebhookUrl } from "./interface/webhooks/webhook-cli
 export type { WebhookCredentials, WebhookSendOptions } from "./interface/webhooks/webhook-client.js";
 export { SDK_VERSION } from "./interface/version.js";
 export type { WebSocketConstructor } from "./infrastructure/websocket-gateway-socket.js";
+
+// Supporting types referenced by the public API
+export type { Configure, ChildBuilder } from "./domain/builders/slash-command.js";
+export { NamedOptionBuilder, ValueOptionBuilder } from "./domain/builders/command-options.js";
+export { InteractionResponseState } from "./domain/interactions/response-state.js";
+export type { InteractionKind, InteractionAction } from "./domain/interactions/response-state.js";
+export type { HeaderReader } from "./domain/ratelimit/rate-limit-headers.js";
+export type { Listener } from "./application/events/typed-emitter.js";
+export type { Handler } from "./interface/interactions/interaction-router.js";
+export type { DispatchEvents } from "./interface/client.js";

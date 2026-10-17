@@ -91,8 +91,8 @@ export interface PermissionContext {
 
 /**
  * Computes a member's effective permissions using Discord's algorithm (P9):
- * base from @everyone and roles, owner/ADMINISTRATOR grants all, then channel overwrites
- * (@everyone, role denies, role allows, member), and nothing without VIEW_CHANNEL.
+ * base from the everyone role and member roles, owner/ADMINISTRATOR grants all, then channel overwrites
+ * (everyone, role denies, role allows, member), and nothing without VIEW_CHANNEL.
  */
 export function computePermissions({ guild, member, channel }: PermissionContext): Permissions {
   const base = computeBasePermissions(guild, member);

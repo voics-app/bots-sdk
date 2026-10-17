@@ -47,7 +47,7 @@ export interface ClientOptions {
   adapters?: { socketFactory?: GatewaySocketFactory; clock?: Clock; random?: RandomSource };
 }
 
-type DispatchEvents = { [K in keyof GatewayDispatchPayloads]: [data: GatewayDispatchPayloads[K]] };
+export type DispatchEvents = { [K in keyof GatewayDispatchPayloads]: [data: GatewayDispatchPayloads[K]] };
 
 /** Events emitted by {@link Client}: lifecycle events plus every gateway dispatch by its P7 name. */
 export type ClientEvents = DispatchEvents & {

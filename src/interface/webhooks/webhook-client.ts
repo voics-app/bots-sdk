@@ -33,7 +33,7 @@ export class WebhookClient {
   private readonly auth: boolean;
 
   /**
-   * @param rest share a {@link RestClient} (and its rate-limit state); otherwise one is created from `restOptions`.
+   * @param options.rest share a {@link RestClient} (and its rate-limit state); otherwise one is created from `restOptions`.
    */
   constructor(credentials: WebhookCredentials, options: { rest?: RestClient; restOptions?: RestClientOptions } = {}) {
     const { id, token } = "url" in credentials ? parseWebhookUrl(credentials.url) : credentials;
