@@ -31,3 +31,8 @@ REVISION ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 ## Multi-stage build: verify and pack the package, then a non-root runtime image
 docker:
 	docker build --build-arg VERSION=$(VERSION) --build-arg REVISION=$(REVISION) -t $(IMAGE):$(VERSION) .
+
+# Install the pre-push hook (lint + unit tests, see lefthook.yml).
+.PHONY: hooks
+hooks:
+	lefthook install
