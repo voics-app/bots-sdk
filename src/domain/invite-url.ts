@@ -1,8 +1,9 @@
 import type { Snowflake } from "../contracts/index.js";
+import { BRAND } from "../brand.js";
 import { Permissions, type PermissionResolvable } from "./bitfield/permissions.js";
 
 /** Default web origin that serves the bot authorization page. */
-export const DEFAULT_WEB_URL = "https://discordy.voics.nl";
+export const DEFAULT_WEB_URL: string = BRAND.webUrl;
 
 export type OAuth2Scope = "bot" | "applications.commands";
 

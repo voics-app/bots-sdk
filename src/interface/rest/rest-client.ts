@@ -3,11 +3,12 @@ import type { Clock } from "../../application/ports/clock.js";
 import type { HttpMethod, HttpTransport } from "../../application/ports/http-transport.js";
 import { RateLimitedRequester, type RateLimitedEvent } from "../../application/rest/rate-limited-requester.js";
 import { defaultClock, defaultTransport } from "../../composition-root.js";
+import { BRAND } from "../../brand.js";
 import { SDK_URL, SDK_VERSION } from "../version.js";
 import { DiscordyApiError } from "./discordy-api-error.js";
 
 /** Default public REST base URL (P9 under the default `discordy-api` hostname). */
-export const DEFAULT_API_URL = "https://discordy-api.voics.nl/api/v1";
+export const DEFAULT_API_URL: string = BRAND.apiUrl;
 
 export interface RestClientOptions {
   /** Bot token, sent as `Authorization: Bot <token>`. Can be set later with {@link RestClient.setToken}. */
@@ -79,7 +80,7 @@ export class RestClient {
 
   async request<T = unknown>(method: HttpMethod, path: string, options: RequestOptions = {}): Promise<T> {
     const headers: Record<string, string> = {
-      "User-Agent": `DiscordyBot (${SDK_URL}, ${SDK_VERSION})`,
+      "User-Agent": `${BRAND.name}Bot (${SDK_URL}, ${SDK_VERSION})`,
       ...options.headers,
     };
     if (options.auth !== false) {
