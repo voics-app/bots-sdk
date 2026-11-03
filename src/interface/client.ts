@@ -20,10 +20,11 @@ import type { WebSocketConstructor } from "../infrastructure/websocket-gateway-s
 import { InteractionRouter } from "./interactions/interaction-router.js";
 import { DiscordyApi, type CommandData } from "./rest/discordy-api.js";
 import { RestClient, type RestClientOptions } from "./rest/rest-client.js";
+import { BRAND } from "../brand.js";
 import { SDK_NAME, SDK_VERSION } from "./version.js";
 
 /** Default gateway URL (P7 under the default `discordy-gateway` hostname). */
-export const DEFAULT_GATEWAY_URL = "wss://discordy-gateway.voics.nl/gateway";
+export const DEFAULT_GATEWAY_URL: string = BRAND.gatewayUrl;
 
 export interface ClientOptions {
   /** Bot token from the application's Bot page. */
