@@ -6,6 +6,6 @@
 
 # Variable: DEFAULT\_API\_URL
 
-> `const` **DEFAULT\_API\_URL**: `"https://discordy-api.voics.nl/api/v1"` = `"https://discordy-api.voics.nl/api/v1"`
+> `const` **DEFAULT\_API\_URL**: `string` = `BRAND.apiUrl`
 
 Default public REST base URL (P9 under the default `discordy-api` hostname).
