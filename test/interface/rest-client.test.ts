@@ -15,7 +15,7 @@ describe("RestClient", () => {
     expect(req?.url).toBe("https://api.test/api/v1/channels/5/messages");
     expect(req?.method).toBe("POST");
     expect(req?.headers).toMatchObject({ Authorization: "Bot Ym90.secret", "Content-Type": "application/json" });
-    expect(req?.headers["User-Agent"]).toMatch(/^DiscordyBot \(.+, \d+\.\d+\.\d+\)$/);
+    expect(req?.headers["User-Agent"]).toMatch(/^VoicsBot \(.+, \d+\.\d+\.\d+\)$/);
     expect(req?.body).toBe('{"content":"hi"}');
   });
 

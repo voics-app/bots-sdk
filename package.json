@@ -1,7 +1,7 @@
 {
   "name": "@discordy-voics/bots",
   "version": "0.1.0",
-  "description": "Lean TypeScript SDK for building Discordy bots: gateway client, rate-limited REST, builders, interactions and webhooks.",
+  "description": "Lean TypeScript SDK for building Voics bots: gateway client, rate-limited REST, builders, interactions and webhooks.",
   "license": "UNLICENSED",
   "type": "module",
   "packageManager": "pnpm@10.18.0",

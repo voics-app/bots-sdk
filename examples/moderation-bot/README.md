@@ -1,6 +1,6 @@
 # Moderation bot example
 
-A small Discordy bot built with `@discordy-voics/bots`.
+A small Voics bot built with `@discordy-voics/bots`.
 
 | Command | What it does | Default permission |
 |---|---|---|

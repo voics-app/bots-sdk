@@ -22,7 +22,7 @@ FROM ${NODE_IMAGE} AS runtime
 ARG VERSION=0.1.0
 ARG REVISION=unknown
 LABEL org.opencontainers.image.title="@discordy-voics/bots" \
-      org.opencontainers.image.description="Discordy bot SDK: built package with ESM and CommonJS entry points" \
+      org.opencontainers.image.description="Voics bot SDK: built package with ESM and CommonJS entry points" \
       org.opencontainers.image.source="https://github.com/discordy-voics/bots-sdk" \
       org.opencontainers.image.version="${VERSION}" \
       org.opencontainers.image.revision="${REVISION}" \

@@ -1,6 +1,6 @@
 import type { Snowflake } from "../contracts/index.js";
 
-/** Milliseconds of 2026-01-01T00:00:00Z, the epoch of Discordy snowflakes (P5). */
+/** Milliseconds of 2026-01-01T00:00:00Z, the epoch of Voics snowflakes (P5). */
 export const DISCORDY_EPOCH = 1_767_225_600_000;
 
 const TIMESTAMP_SHIFT = 22n;

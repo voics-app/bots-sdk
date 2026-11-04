@@ -6,7 +6,7 @@
 
 # Class: RestClient
 
-JSON REST client for the Discordy API with automatic rate-limit handling.
+JSON REST client for the Voics API with automatic rate-limit handling.
 
 ## Constructors
 

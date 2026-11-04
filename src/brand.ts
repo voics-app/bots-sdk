@@ -4,7 +4,7 @@
  */
 export const BRAND = {
   /** Product name; also the stem of the REST User-Agent (`<name>Bot`). */
-  name: "Discordy",
+  name: "Voics",
   /** Public web origin that serves the bot authorization page and invite links. */
   webUrl: "https://discordy.voics.nl",
   /** Default public REST base URL. */

@@ -22,7 +22,7 @@ export const RateLimitHeaders = {
   RetryAfter: "retry-after",
 } as const;
 
-/** Discordy/Discord JSON error codes (P9). */
+/** Voics/Discord JSON error codes (P9). */
 export const ApiErrorCodes = {
   UnknownChannel: 10003,
   UnknownGuild: 10004,

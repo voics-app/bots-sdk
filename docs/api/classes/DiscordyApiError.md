@@ -60,7 +60,7 @@ A non-2xx REST response, carrying the P9 error envelope `{ code, message, errors
 
 > `readonly` **code**: `number`
 
-Discordy/Discord JSON error code, or 0 when the body was not an error envelope.
+Voics/Discord JSON error code, or 0 when the body was not an error envelope.
 
 ***
 

@@ -1,6 +1,6 @@
 # Getting started with `@discordy-voics/bots`
 
-This guide takes you from nothing to a running slash-command bot on Discordy.
+This guide takes you from nothing to a running slash-command bot on Voics.
 
 1. [Create an application](#1-create-an-application)
 2. [Get a bot token](#2-get-a-bot-token)
@@ -230,7 +230,7 @@ Rate limits are handled for you:
 - Requests are queued per bucket, using the `X-RateLimit-Bucket` header and the major parameter (channel, guild or webhook).
 - The client waits for `X-RateLimit-Reset-After` when a bucket is empty.
 - 429 responses (bucket or global) and transient 5xx responses are retried up to `retries` times (default 3).
-- Failures throw `DiscordyApiError` with `status` and the Discordy error `code`, for example `50013` for missing permissions.
+- Failures throw `DiscordyApiError` with `status` and the Voics error `code`, for example `50013` for missing permissions.
 
 ### Webhooks
 
