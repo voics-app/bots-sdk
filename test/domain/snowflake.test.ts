@@ -2,7 +2,7 @@ import { describe, expect, it } from "vitest";
 import { DISCORDY_EPOCH, snowflakeFromTimestamp, snowflakeTimestamp } from "../../src/domain/snowflake.js";
 
 describe("snowflake", () => {
-  it("uses the Discordy epoch 2026-01-01T00:00:00Z", () => {
+  it("uses the Voics epoch 2026-01-01T00:00:00Z", () => {
     expect(DISCORDY_EPOCH).toBe(Date.parse("2026-01-01T00:00:00Z"));
   });
 

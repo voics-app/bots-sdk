@@ -2,7 +2,7 @@
   "name": "@discordy-voics/moderation-bot-example",
   "version": "0.1.0",
   "private": true,
-  "description": "Example Discordy moderation bot: /ping, /kick with confirmation buttons, /purge.",
+  "description": "Example Voics moderation bot: /ping, /kick with confirmation buttons, /purge.",
   "license": "UNLICENSED",
   "type": "module",
   "scripts": {

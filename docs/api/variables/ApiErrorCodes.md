@@ -8,7 +8,7 @@
 
 > `const` **ApiErrorCodes**: `object`
 
-Discordy/Discord JSON error codes (P9).
+Voics/Discord JSON error codes (P9).
 
 ## Type Declaration
 

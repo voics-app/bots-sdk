@@ -1,4 +1,4 @@
-/** Raised when a value violates a Discordy/Discord constraint (builders, resolvers, bitfields). */
+/** Raised when a value violates a Voics/Discord constraint (builders, resolvers, bitfields). */
 export class ValidationError extends RangeError {
   override readonly name = "ValidationError";
 }

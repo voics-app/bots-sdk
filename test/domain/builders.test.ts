@@ -179,7 +179,7 @@ describe("EmbedBuilder", () => {
       .setColor("#ff0000")
       .setTimestamp(Date.parse("2026-10-16T00:00:00Z"))
       .setAuthor({ name: "Mod", iconURL: "https://cdn/x.png" })
-      .setFooter({ text: "Discordy" })
+      .setFooter({ text: "Voics" })
       .addFields({ name: "Reason", value: "spam", inline: true })
       .toJSON();
     expect(json).toEqual({
@@ -188,7 +188,7 @@ describe("EmbedBuilder", () => {
       color: 0xff0000,
       timestamp: "2026-10-16T00:00:00.000Z",
       author: { name: "Mod", icon_url: "https://cdn/x.png" },
-      footer: { text: "Discordy" },
+      footer: { text: "Voics" },
       fields: [{ name: "Reason", value: "spam", inline: true }],
     });
   });

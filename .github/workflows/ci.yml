@@ -27,7 +27,7 @@ jobs:
     uses: discordy-voics/.github/.github/workflows/node.yml@main
     with:
       image-name: bots-sdk
-      description: "@discordy-voics/bots: TypeScript SDK for Discordy bots (lint, typecheck, unit tests with a fake gateway and mocked REST)"
+      description: "@discordy-voics/bots: TypeScript SDK for Voics bots (lint, typecheck, unit tests with a fake gateway and mocked REST)"
     secrets:
       private-deps-token: ${{ secrets.DEPS_TOKEN }}
 

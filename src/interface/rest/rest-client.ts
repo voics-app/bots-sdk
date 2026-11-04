@@ -36,7 +36,7 @@ export interface RequestOptions {
   headers?: Record<string, string>;
 }
 
-/** JSON REST client for the Discordy API with automatic rate-limit handling. */
+/** JSON REST client for the Voics API with automatic rate-limit handling. */
 export class RestClient {
   private token: string | undefined;
   private readonly baseUrl: string;

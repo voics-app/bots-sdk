@@ -1,6 +1,6 @@
 # Architecture
 
-`@discordy-voics/bots` is a lean TypeScript SDK for Discordy bots. It speaks the P7 gateway protocol and the P9 REST API, and it is organised in four layers plus a composition root.
+`@discordy-voics/bots` is a lean TypeScript SDK for Voics bots. It speaks the P7 gateway protocol and the P9 REST API, and it is organised in four layers plus a composition root.
 
 ## Layers
 
@@ -20,8 +20,8 @@
 ```mermaid
 flowchart LR
   bot["Bot code"]
-  discordyApi[("Discordy REST API<br/>discordy-api.voics.nl/api/v1")]
-  discordyGw[("Discordy gateway<br/>discordy-gateway.voics.nl/gateway")]
+  discordyApi[("Voics REST API<br/>discordy-api.voics.nl/api/v1")]
+  discordyGw[("Voics gateway<br/>discordy-gateway.voics.nl/gateway")]
 
   subgraph sdk["@discordy-voics/bots"]
     direction TB

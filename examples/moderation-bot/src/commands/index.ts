@@ -4,7 +4,7 @@ import { kickCommand, registerKick } from "./kick.js";
 import { pingCommand, registerPing } from "./ping.js";
 import { purgeCommand, registerPurge } from "./purge.js";
 
-/** Every command the bot registers with Discordy. */
+/** Every command the bot registers with Voics. */
 export const commandDefinitions = [pingCommand, kickCommand, purgeCommand];
 
 /** Attaches every command and component handler to the router. */

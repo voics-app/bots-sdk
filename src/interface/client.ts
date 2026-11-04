@@ -62,7 +62,7 @@ export type ClientEvents = DispatchEvents & {
 };
 
 /**
- * A Discordy bot: one gateway session plus REST, typed API helpers and an interaction router.
+ * A Voics bot: one gateway session plus REST, typed API helpers and an interaction router.
  *
  * ```ts
  * const client = new Client({ token, intents: ["Guilds"] });
