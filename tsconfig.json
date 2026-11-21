@@ -19,7 +19,7 @@
     "resolveJsonModule": true,
     "types": ["node"],
     "noEmit": true,
-    "paths": { "@discordy-voics/bots": ["./src/index.ts"] }
+    "paths": { "@voics-app/bots": ["./src/index.ts"] }
   },
   "include": ["src", "test", "examples/*/src", "examples/*/test", "*.config.ts"]
 }

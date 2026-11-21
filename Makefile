@@ -24,7 +24,7 @@ build: install
 docs: install
 	$(PNPM) run docs:api
 
-IMAGE ?= ghcr.io/discordy-voics/bots-sdk
+IMAGE ?= ghcr.io/voics-app/bots-sdk
 VERSION ?= $(shell node -p "require('./package.json').version")
 REVISION ?= $(shell git rev-parse --short HEAD 2>/dev/null || echo unknown)
 

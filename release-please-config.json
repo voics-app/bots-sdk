@@ -3,7 +3,7 @@
   "packages": {
     ".": {
       "release-type": "node",
-      "package-name": "@discordy-voics/bots",
+      "package-name": "@voics-app/bots",
       "changelog-path": "CHANGELOG.md",
       "extra-files": ["src/interface/version.ts"]
     }

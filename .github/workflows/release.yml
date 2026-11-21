@@ -13,7 +13,7 @@ jobs:
       contents: write
       pull-requests: write
       issues: write
-    uses: discordy-voics/.github/.github/workflows/release-please.yml@main
+    uses: voics-app/.github/.github/workflows/release-please.yml@main
 
   publish:
     name: publish to GitHub Packages
@@ -34,10 +34,10 @@ jobs:
           node-version: "24"
           cache: pnpm
           registry-url: https://npm.pkg.github.com
-          scope: "@discordy-voics"
+          scope: "@voics-app"
       - run: pnpm install --frozen-lockfile
       - run: pnpm test
-      - name: Publish @discordy-voics/bots ${{ needs.release-please.outputs.version }}
+      - name: Publish @voics-app/bots ${{ needs.release-please.outputs.version }}
         run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}

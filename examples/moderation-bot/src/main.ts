@@ -1,5 +1,5 @@
 /** Composition root of the example moderation bot. */
-import { Client } from "@discordy-voics/bots";
+import { Client } from "@voics-app/bots";
 import { commandDefinitions, registerCommands } from "./commands/index.js";
 import { loadConfig } from "./config.js";
 

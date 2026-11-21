@@ -3,7 +3,7 @@ import { defineConfig } from "vitest/config";
 
 export default defineConfig({
   resolve: {
-    alias: { "@discordy-voics/bots": fileURLToPath(new URL("./src/index.ts", import.meta.url)) },
+    alias: { "@voics-app/bots": fileURLToPath(new URL("./src/index.ts", import.meta.url)) },
   },
   test: {
     include: ["test/**/*.test.ts", "examples/*/test/**/*.test.ts"],

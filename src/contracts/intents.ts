@@ -1,7 +1,7 @@
 /**
  * Gateway intent bits (P7, Discord values).
  *
- * Local mirror of `@discordy-voics/contracts`; replace with the generated package once published.
+ * Local mirror of `@voics-app/contracts`; replace with the generated package once published.
  * @module
  */
 export const GatewayIntentBits = {

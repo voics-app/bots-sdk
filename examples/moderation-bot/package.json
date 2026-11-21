@@ -1,5 +1,5 @@
 {
-  "name": "@discordy-voics/moderation-bot-example",
+  "name": "@voics-app/moderation-bot-example",
   "version": "0.1.0",
   "private": true,
   "description": "Example Voics moderation bot: /ping, /kick with confirmation buttons, /purge.",
@@ -10,6 +10,6 @@
     "register": "tsx --env-file-if-exists=.env src/register-commands.ts"
   },
   "dependencies": {
-    "@discordy-voics/bots": "workspace:*"
+    "@voics-app/bots": "workspace:*"
   }
 }

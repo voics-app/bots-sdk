@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, type InteractionRouter } from "@discordy-voics/bots";
+import { SlashCommandBuilder, type InteractionRouter } from "@voics-app/bots";
 import type { CommandContext } from "./context.js";
 
 export const pingCommand = new SlashCommandBuilder().setName("ping").setDescription("Check that the bot is alive");

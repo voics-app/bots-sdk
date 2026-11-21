@@ -1,10 +1,10 @@
-**@discordy-voics/bots API reference**
+**@voics-app/bots API reference**
 
 ***
 
-# @discordy-voics/bots API reference
+# @voics-app/bots API reference
 
-`@discordy-voics/bots` — a lean SDK for Voics bots.
+`@voics-app/bots` — a lean SDK for Voics bots.
 
 - [Client](classes/Client.md): gateway session (intents, heartbeat, resume, reconnect) plus REST and interactions.
 - [RestClient](classes/RestClient.md) / [DiscordyApi](classes/DiscordyApi.md) / [Routes](variables/Routes.md): rate-limited REST for the P9 endpoints.

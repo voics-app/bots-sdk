@@ -1,7 +1,7 @@
 /**
  * Permission bits (P9, Discord's documented values). Serialized as decimal strings on the wire.
  *
- * Local mirror of `@discordy-voics/contracts` (`permissions.json`); replace with the generated package once published.
+ * Local mirror of `@voics-app/contracts` (`permissions.json`); replace with the generated package once published.
  * @module
  */
 export const PermissionFlagsBits = {

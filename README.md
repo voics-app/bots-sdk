@@ -1,4 +1,4 @@
-# @discordy-voics/bots
+# @voics-app/bots
 
 A lean TypeScript SDK for building bots on Voics. It provides a gateway client with intents, heartbeats and resume, a rate-limited REST client, builders for slash commands, components, modals and embeds, interaction handlers, and webhooks.
 
@@ -12,16 +12,16 @@ Requires Node.js 22 or newer.
 
 ## Install
 
-The package is published to GitHub Packages. Point the `@discordy-voics` scope at it:
+The package is published to GitHub Packages. Point the `@voics-app` scope at it:
 
 ```ini
 # .npmrc
-@discordy-voics:registry=https://npm.pkg.github.com
+@voics-app:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
 ```bash
-pnpm add @discordy-voics/bots
+pnpm add @voics-app/bots
 ```
 
 ## Run locally
@@ -32,7 +32,7 @@ This repository is a pnpm workspace. The example bot imports the built package, 
 make install     # pnpm install --frozen-lockfile
 make build       # tsup: ESM, CJS and type declarations into dist/
 cp examples/moderation-bot/.env.example examples/moderation-bot/.env   # fill in your values
-pnpm --filter @discordy-voics/moderation-bot-example start
+pnpm --filter @voics-app/moderation-bot-example start
 ```
 
 `make dev` rebuilds the package on change.
@@ -91,8 +91,8 @@ docs/           getting-started guide and generated API reference
 
 These steps need the GitHub organisation and cannot be done from this repository alone:
 
-- Create the private `discordy-voics/bots-sdk` repository and push `main` and `develop`.
-- Confirm the reusable workflows exist in `discordy-voics/.github` (`node.yml`, `gitflow-guard.yml`, `release-please.yml`).
+- Create the private `voics-app/bots-sdk` repository and push `main` and `develop`.
+- Confirm the reusable workflows exist in `voics-app/.github` (`node.yml`, `gitflow-guard.yml`, `release-please.yml`).
 - Add the `DEPS_TOKEN` secret (passed to `node.yml`) and allow the release workflow `packages: write` so `pnpm publish` can reach GitHub Packages.
 - Run CI once on GitHub; the workflows have not run there yet.
 

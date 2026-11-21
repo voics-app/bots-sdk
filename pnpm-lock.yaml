@@ -50,7 +50,7 @@ importers:
 
   examples/moderation-bot:
     dependencies:
-      '@discordy-voics/bots':
+      '@voics-app/bots':
         specifier: workspace:*
         version: link:../..
 

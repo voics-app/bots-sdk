@@ -1,8 +1,8 @@
-[**@discordy-voics/bots API reference**](../README.md)
+[**@voics-app/bots API reference**](../README.md)
 
 ***
 
-[@discordy-voics/bots API reference](../README.md) / GATEWAY\_VERSION
+[@voics-app/bots API reference](../README.md) / GATEWAY\_VERSION
 
 # Variable: GATEWAY\_VERSION
 

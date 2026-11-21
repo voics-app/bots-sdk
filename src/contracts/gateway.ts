@@ -1,7 +1,7 @@
 /**
  * Gateway wire protocol (pinned interface P7).
  *
- * Local mirror of `@discordy-voics/contracts`; replace with the generated package once published.
+ * Local mirror of `@voics-app/contracts`; replace with the generated package once published.
  * @module
  */
 import type {

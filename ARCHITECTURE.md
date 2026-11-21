@@ -1,6 +1,6 @@
 # Architecture
 
-`@discordy-voics/bots` is a lean TypeScript SDK for Voics bots. It speaks the P7 gateway protocol and the P9 REST API, and it is organised in four layers plus a composition root.
+`@voics-app/bots` is a lean TypeScript SDK for Voics bots. It speaks the P7 gateway protocol and the P9 REST API, and it is organised in four layers plus a composition root.
 
 ## Layers
 
@@ -11,7 +11,7 @@
 | Infrastructure | `src/infrastructure/` | Adapters for the ports: `FetchHttpTransport` (global `fetch`), `WebSocketGatewaySocket` (WHATWG `WebSocket`), `systemClock` | application ports, domain |
 | Interface | `src/interface/` | Public classes: `Client`, `RestClient`, `DiscordyApi`, `Routes`, `InteractionRouter` and the interaction classes, `WebhookClient` | everything above |
 
-`src/contracts/` mirrors the pinned P7 (gateway) and P9 (REST) wire shapes. It is the one module to swap for the generated `@discordy-voics/contracts` package once it is published.
+`src/contracts/` mirrors the pinned P7 (gateway) and P9 (REST) wire shapes. It is the one module to swap for the generated `@voics-app/contracts` package once it is published.
 
 `src/composition-root.ts` is the only place that binds ports to adapters. Public classes call its factories (`defaultTransport`, `defaultClock`, `defaultRandom`, `defaultSocketFactory`) for any dependency the caller did not inject, which keeps the unit tests free of real sockets and network calls.
 
@@ -23,7 +23,7 @@ flowchart LR
   discordyApi[("Voics REST API<br/>discordy-api.voics.nl/api/v1")]
   discordyGw[("Voics gateway<br/>discordy-gateway.voics.nl/gateway")]
 
-  subgraph sdk["@discordy-voics/bots"]
+  subgraph sdk["@voics-app/bots"]
     direction TB
 
     subgraph iface["Interface"]

@@ -1,5 +1,5 @@
 /**
- * `@discordy-voics/bots` — a lean SDK for Voics bots.
+ * `@voics-app/bots` — a lean SDK for Voics bots.
  *
  * - {@link Client}: gateway session (intents, heartbeat, resume, reconnect) plus REST and interactions.
  * - {@link RestClient} / {@link DiscordyApi} / {@link Routes}: rate-limited REST for the P9 endpoints.

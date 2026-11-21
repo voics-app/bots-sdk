@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { DiscordyApi, InteractionRouter, RestClient, snowflakeFromTimestamp, type ApiInteraction } from "@discordy-voics/bots";
+import { DiscordyApi, InteractionRouter, RestClient, snowflakeFromTimestamp, type ApiInteraction } from "@voics-app/bots";
 import { registerCommands, commandDefinitions } from "../src/commands/index.js";
 import { FakeTransport, InstantClock, type FakeReply } from "../../../test/support/fakes.js";
 import { commandInteraction, componentInteraction } from "../../../test/support/interactions.js";
