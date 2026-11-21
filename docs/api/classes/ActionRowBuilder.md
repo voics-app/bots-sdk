@@ -1,8 +1,8 @@
-[**@discordy-voics/bots API reference**](../README.md)
+[**@voics-app/bots API reference**](../README.md)
 
 ***
 
-[@discordy-voics/bots API reference](../README.md) / ActionRowBuilder
+[@voics-app/bots API reference](../README.md) / ActionRowBuilder
 
 # Class: ActionRowBuilder\<C\>
 

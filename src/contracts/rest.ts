@@ -1,7 +1,7 @@
 /**
  * REST object shapes and enums (pinned interface P9, Discord API v10 field names).
  *
- * Local mirror of `@discordy-voics/contracts`; replace with the generated package once published.
+ * Local mirror of `@voics-app/contracts`; replace with the generated package once published.
  * @module
  */
 

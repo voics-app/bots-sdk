@@ -8,7 +8,7 @@ import {
   buildCustomId,
   type ComponentInteraction,
   type InteractionRouter,
-} from "@discordy-voics/bots";
+} from "@voics-app/bots";
 import type { CommandContext } from "./context.js";
 
 const REASON_FIELD = "Reason";

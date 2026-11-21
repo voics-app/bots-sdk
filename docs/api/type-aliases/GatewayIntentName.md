@@ -1,8 +1,8 @@
-[**@discordy-voics/bots API reference**](../README.md)
+[**@voics-app/bots API reference**](../README.md)
 
 ***
 
-[@discordy-voics/bots API reference](../README.md) / GatewayIntentName
+[@voics-app/bots API reference](../README.md) / GatewayIntentName
 
 # Type Alias: GatewayIntentName
 

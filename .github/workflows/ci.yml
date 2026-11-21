@@ -17,17 +17,17 @@ concurrency:
 jobs:
   gitflow:
     if: github.event_name == 'pull_request'
-    uses: discordy-voics/.github/.github/workflows/gitflow-guard.yml@main
+    uses: voics-app/.github/.github/workflows/gitflow-guard.yml@main
 
   node:
     permissions:
       contents: read
       actions: read   # shared workflow: tag builds look up the main run of this commit
       packages: read  # private npm packages (GitHub Packages)
-    uses: discordy-voics/.github/.github/workflows/node.yml@main
+    uses: voics-app/.github/.github/workflows/node.yml@main
     with:
       image-name: bots-sdk
-      description: "@discordy-voics/bots: TypeScript SDK for Voics bots (lint, typecheck, unit tests with a fake gateway and mocked REST)"
+      description: "@voics-app/bots: TypeScript SDK for Voics bots (lint, typecheck, unit tests with a fake gateway and mocked REST)"
     secrets:
       private-deps-token: ${{ secrets.DEPS_TOKEN }}
 

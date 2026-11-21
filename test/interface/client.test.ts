@@ -36,7 +36,7 @@ describe("Client", () => {
     expect(client.user?.username).toBe("modbot");
     expect(client.applicationId).toBe("800");
     expect(client.isReady).toBe(true);
-    expect(gateway.received(Op.Identify)[0]?.d).toMatchObject({ token: "Ym90.secret", intents: 1 | 512 | 32768, properties: { client: "@discordy-voics/bots" } });
+    expect(gateway.received(Op.Identify)[0]?.d).toMatchObject({ token: "Ym90.secret", intents: 1 | 512 | 32768, properties: { client: "@voics-app/bots" } });
   });
 
   it("emits typed dispatch events and raw events", async () => {

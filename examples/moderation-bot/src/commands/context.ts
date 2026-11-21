@@ -1,4 +1,4 @@
-import type { DiscordyApi } from "@discordy-voics/bots";
+import type { DiscordyApi } from "@voics-app/bots";
 
 /** What command handlers need from the outside world, injected by the composition root. */
 export interface CommandContext {

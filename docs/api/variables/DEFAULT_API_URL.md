@@ -1,8 +1,8 @@
-[**@discordy-voics/bots API reference**](../README.md)
+[**@voics-app/bots API reference**](../README.md)
 
 ***
 
-[@discordy-voics/bots API reference](../README.md) / DEFAULT\_API\_URL
+[@voics-app/bots API reference](../README.md) / DEFAULT\_API\_URL
 
 # Variable: DEFAULT\_API\_URL
 

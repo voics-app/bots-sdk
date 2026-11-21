@@ -1,4 +1,4 @@
-import type { InteractionRouter } from "@discordy-voics/bots";
+import type { InteractionRouter } from "@voics-app/bots";
 import type { CommandContext } from "./context.js";
 import { kickCommand, registerKick } from "./kick.js";
 import { pingCommand, registerPing } from "./ping.js";

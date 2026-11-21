@@ -1,6 +1,6 @@
 # Moderation bot example
 
-A small Voics bot built with `@discordy-voics/bots`.
+A small Voics bot built with `@voics-app/bots`.
 
 | Command | What it does | Default permission |
 |---|---|---|
@@ -18,13 +18,13 @@ From the repository root:
 pnpm install
 pnpm build                                   # the example imports the built package
 cp examples/moderation-bot/.env.example examples/moderation-bot/.env   # then fill in your values
-pnpm --filter @discordy-voics/moderation-bot-example start
+pnpm --filter @voics-app/moderation-bot-example start
 ```
 
 `start` connects to the gateway and registers the commands on READY. To register commands without starting the bot:
 
 ```bash
-pnpm --filter @discordy-voics/moderation-bot-example register
+pnpm --filter @voics-app/moderation-bot-example register
 ```
 
 ## Configuration

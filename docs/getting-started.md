@@ -1,4 +1,4 @@
-# Getting started with `@discordy-voics/bots`
+# Getting started with `@voics-app/bots`
 
 This guide takes you from nothing to a running slash-command bot on Voics.
 
@@ -50,7 +50,7 @@ Treat the token like a password:
 A bot joins a guild when someone with **Manage Server** authorizes it. Build the authorization URL with the permissions the bot needs:
 
 ```ts
-import { buildInviteUrl } from "@discordy-voics/bots";
+import { buildInviteUrl } from "@voics-app/bots";
 
 const url = buildInviteUrl({
   clientId: "YOUR_APPLICATION_ID",
@@ -65,7 +65,7 @@ Open the URL, pick a guild, and confirm. Under the hood the page calls `POST /ap
 **Permissions** use Discord's bit values and travel as decimal strings. The `Permissions` helper does the arithmetic:
 
 ```ts
-import { Permissions, PermissionFlagsBits } from "@discordy-voics/bots";
+import { Permissions, PermissionFlagsBits } from "@voics-app/bots";
 
 const perms = new Permissions(["KickMembers", "BanMembers"]);
 perms.has("KickMembers");          // true
@@ -110,23 +110,23 @@ Intents decide which gateway events your bot receives. Request only what you use
 - **Delivery modes.** Bots only see **Standard** channels. Ephemeral (end-to-end encrypted) and P2P chats never reach bots, and the server rejects sending messages into them with error `50160`.
 
 ```ts
-import { Intents } from "@discordy-voics/bots";
+import { Intents } from "@voics-app/bots";
 Intents.resolve(["Guilds", "GuildMessages", "MessageContent"]); // 33281
 Intents.privileged(33281); // ["MessageContent"]
 ```
 
 ## 5. Install the SDK
 
-The package is published to GitHub Packages. Point the `@discordy-voics` scope at it and authenticate with a GitHub token that has `read:packages`:
+The package is published to GitHub Packages. Point the `@voics-app` scope at it and authenticate with a GitHub token that has `read:packages`:
 
 ```ini
 # .npmrc
-@discordy-voics:registry=https://npm.pkg.github.com
+@voics-app:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${GITHUB_TOKEN}
 ```
 
 ```bash
-pnpm add @discordy-voics/bots    # or npm install / yarn add
+pnpm add @voics-app/bots    # or npm install / yarn add
 ```
 
 Requirements: Node.js 22 or newer, which provides `fetch` and `WebSocket` globally. ESM and CommonJS builds are both included.
@@ -135,7 +135,7 @@ Requirements: Node.js 22 or newer, which provides `fetch` and `WebSocket` global
 
 ```ts
 // bot.ts
-import { Client, SlashCommandBuilder } from "@discordy-voics/bots";
+import { Client, SlashCommandBuilder } from "@voics-app/bots";
 
 const client = new Client({
   token: process.env.DISCORDY_BOT_TOKEN!,
@@ -195,7 +195,7 @@ Calling a second initial response throws `InteractionStateError` before any requ
 ### Buttons, selects and modals
 
 ```ts
-import { ActionRowBuilder, ButtonBuilder, ModalBuilder, TextInputBuilder, buildCustomId } from "@discordy-voics/bots";
+import { ActionRowBuilder, ButtonBuilder, ModalBuilder, TextInputBuilder, buildCustomId } from "@voics-app/bots";
 
 const row = new ActionRowBuilder<ButtonBuilder>().addComponents(
   new ButtonBuilder().setCustomId(buildCustomId("vote", "yes")).setLabel("Yes").setStyle("Success"),
@@ -237,7 +237,7 @@ Rate limits are handled for you:
 Posting through a webhook needs no bot token:
 
 ```ts
-import { WebhookClient } from "@discordy-voics/bots";
+import { WebhookClient } from "@voics-app/bots";
 const hook = new WebhookClient({ url: process.env.DEPLOY_WEBHOOK_URL! });
 await hook.send({ content: "Deploy finished", username: "CI" });
 ```

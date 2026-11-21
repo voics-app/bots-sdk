@@ -1,8 +1,8 @@
-[**@discordy-voics/bots API reference**](../README.md)
+[**@voics-app/bots API reference**](../README.md)
 
 ***
 
-[@discordy-voics/bots API reference](../README.md) / GatewayFrame
+[@voics-app/bots API reference](../README.md) / GatewayFrame
 
 # Interface: GatewayFrame\<D\>
 

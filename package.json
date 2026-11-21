@@ -1,5 +1,5 @@
 {
-  "name": "@discordy-voics/bots",
+  "name": "@voics-app/bots",
   "version": "0.1.0",
   "description": "Lean TypeScript SDK for building Voics bots: gateway client, rate-limited REST, builders, interactions and webhooks.",
   "license": "UNLICENSED",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/discordy-voics/bots-sdk.git"
+    "url": "git+https://github.com/voics-app/bots-sdk.git"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com",

@@ -1,4 +1,4 @@
-import { SlashCommandBuilder, snowflakeTimestamp, type InteractionRouter } from "@discordy-voics/bots";
+import { SlashCommandBuilder, snowflakeTimestamp, type InteractionRouter } from "@voics-app/bots";
 import type { CommandContext } from "./context.js";
 
 /** Bulk delete only accepts messages younger than 14 days (Discord parity). */

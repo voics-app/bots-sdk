@@ -15,7 +15,7 @@ describe("GatewayConnection against a fake gateway", () => {
       url: gateway.url,
       token: "Ym90.secret",
       intents: 513,
-      properties: { os: "test", client: "@discordy-voics/bots", version: "0.1.0" },
+      properties: { os: "test", client: "@voics-app/bots", version: "0.1.0" },
       deviceId: null,
       socketFactory: createWebSocketFactory(),
       clock: systemClock,
@@ -45,7 +45,7 @@ describe("GatewayConnection against a fake gateway", () => {
       token: "Ym90.secret",
       device_id: null,
       intents: 513,
-      properties: { os: "test", client: "@discordy-voics/bots", version: "0.1.0" },
+      properties: { os: "test", client: "@voics-app/bots", version: "0.1.0" },
     });
     expect(gateway.current.url).toBe("/gateway?v=1&encoding=json");
     expect(conn.sessionId).toBe("session-1");
